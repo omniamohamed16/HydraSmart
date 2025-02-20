@@ -110,7 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
 }
 
@@ -140,8 +140,8 @@
   cursor: pointer;
 }
 
-.products div{
-  width: calc(100%/4);
+.products div {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,71 +165,158 @@
   border-radius: 5px;
 }
 
-
+/* start properities */
 .prop {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: rgb(255, 252, 252);
-  border: 200px 200px;
   border-radius: 5px;
   font-family: omnia;
+  margin-top: 20px;
 }
 
-.start {
+.prop h4 {
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: omnia;
+  font-style: oblique;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.prop pre {
+  font-family: omnia;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.prop span {
+  color: #012e2e;
+  font-size: 20px;
+}
+
+
+
+/* start middle image */
+.middle-img {
   position: relative;
   background-image: url('../imgs/pexels-thelazyartist-1302928.jpg');
   width: 97%;
   height: 700px;
   background-size: cover;
+  background-position: 50% 10%;
   border-radius: 3.75em;
   margin: 30px;
 }
 
+.middle-img p {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  font-family: omnia;
+  font-size: 100px;
+}
 
-.last {
+.middle-img a {
+  color: #012e2e;
+  text-decoration: none;
+  font-size: large;
+}
+
+.middle-img .shop-now {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  color: #024c4c;
+  border-radius: 3.75em;
+  border: 0ch;
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+/* start footer section */
+.footer {
   background-color: white;
-  border: 200px 200px;
   border-radius: 10px;
   margin-top: 50px;
-  width: 100%;
+  width: auto;
   height: 500px;
   font-family: omnia;
   position: relative;
+
+  padding: 40px 30px;
 }
 
-.i {
+.footer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer h4 {
+  font-size: 25px;
+  font-style: oblique;
+  margin-bottom: 30px;
+
+}
+
+.footer input {
+  border-radius: 3.75em;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+
+.footer .icons {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 30px;
   color: #012e2e;
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
 }
 
 .lists {
-  position: absolute;
-  left: 700px;
-  top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 20px;
+
+}
+
+.list1 {
+  display: flex;
+  flex-direction: column;
+
   font-size: 20px;
   color: black;
   font-family: omnia;
 }
 
 .list2 {
-  position: absolute;
-  left: 1000px;
-  top: 5px;
+  display: flex;
+  flex-direction: column;
+
   font-size: 20px;
   color: black;
   font-family: omnia;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+
 
 li {
   list-style-type: none;
   color: grey;
-  position: absolute;
 }
 
 
