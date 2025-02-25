@@ -39,6 +39,7 @@
   text-align: center;
   position: relative;
   margin: 0px;
+  width: 100%;
   height: 70%;
   position: relative;
   background-image: url("../imgs/headerPhoto.jpg");
@@ -248,16 +249,15 @@
   border-radius: 10px;
   margin-top: 50px;
   width: auto;
-  height: 500px;
+  height: auto;
   font-family: omnia;
   position: relative;
-
   padding: 40px 30px;
 }
 
 .footer .content {
-  text-align: center;
-  position: absolute;
+display: flex;
+gap: 10%;
 }
 
 .footer h4 {
@@ -268,8 +268,7 @@
 }
 
 .footer input {
-  position: relative;
-  float: left;
+
   border-radius: 3.75em;
   width: 300px;
   height: 50px;
@@ -277,7 +276,7 @@
   padding-left: 20px;
 }
 
-.footer button{
+.footer button {
   position: absolute;
   top: 270px;
   background-color: white;
@@ -294,9 +293,9 @@
 
 
 .footer .icons {
-  position: relative;
-  top: 170px;
-  left: 30px;
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 20px;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -304,14 +303,13 @@
 }
 
 .lists {
-position: relative;
-left: 300px;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
+ position: relative;
+ left: auto;
+ display: inline-flex;
 }
 
 .list1 {
+
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -320,6 +318,7 @@ left: 300px;
 }
 
 .list2 {
+
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -334,6 +333,62 @@ left: 300px;
   list-style-type: none;
   color: grey;
 }
+
+@media(min-width:757px) {
+  .footer {
+    width: 100%;
+  }
+
+  .footer .content {
+    width: 100%;
+    gap: 1%;
+  }
+}
+
+
+
+
+@media(min-width:576px) {
+  .footer {
+    width: 100%;
+    text-align: center;
+  }
+  .footer h4{
+    margin-bottom: 50px;
+  }
+  .footer .content {
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer input{
+  position: absolute;
+  top: 82px;
+  left: 292px;
+  }
+
+  .footer button{
+    right: 278px;
+    top: 137px;
+  }
+  .lists{
+    margin-top: 100px;
+    margin-bottom: 75px;}
+  .footer .icons{
+    left: 43%;
+
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 .dropbtn {
