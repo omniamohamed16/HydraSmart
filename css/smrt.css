@@ -1,3 +1,10 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
 @font-face {
   font-family: monmon;
   src: url(HaringtonSignatureDemo-e9VYO.otf);
@@ -256,8 +263,8 @@
 }
 
 .footer .content {
-display: flex;
-gap: 10%;
+  display: flex;
+  gap: 10%;
 }
 
 .footer h4 {
@@ -303,9 +310,9 @@ gap: 10%;
 }
 
 .lists {
- position: relative;
- left: auto;
- display: inline-flex;
+  position: relative;
+  left: auto;
+  display: inline-flex;
 }
 
 .list1 {
@@ -334,52 +341,82 @@ gap: 10%;
   color: grey;
 }
 
-@media(min-width:757px) {
-  .footer {
-    width: 100%;
+/* @media (min-width:576px) {
+  .container {
+      max-width: 100%;
   }
-
-  .footer .content {
-    width: 100%;
-    gap: 1%;
+  .header button {
+    font-size: 20px;
+  }
+  .header span{
+    margin-top: 50px;
+    color: black;
   }
 }
 
+@media (min-width:768px) {
+  .container {
+      max-width: 100%;
+  }
+  .header button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+      max-width: 100%;
+  }
+
+ }
+
+@media (min-width:1200px) {
+  .container {
+      max-width: 100%;
+  }
+} */
+
+/* 
 
 
+@media(max-width:767px) {
 
-@media(min-width:576px) {
   .footer {
     width: 100%;
     text-align: center;
   }
-  .footer h4{
+
+  .footer h4 {
     margin-bottom: 50px;
   }
+
   .footer .content {
     display: block;
     width: 100%;
     align-items: center;
     text-align: center;
   }
-  .footer input{
-  position: absolute;
-  top: 82px;
-  left: 292px;
+
+  .footer input {
+    position: relative;
+    top: 82px;
+    left: 0;
   }
 
-  .footer button{
-    right: 278px;
+  .footer button {
     top: 137px;
   }
-  .lists{
+
+  .lists {
     margin-top: 100px;
-    margin-bottom: 75px;}
-  .footer .icons{
+    margin-bottom: 75px;
+  }
+
+  .footer .icons {
     left: 43%;
 
   }
-}
+} */
 
 
 
