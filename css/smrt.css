@@ -53,11 +53,11 @@
   background-position: 20%;
 
 }
-/* @media(min-width:757px){
+@media(min-width:757px){
   .container .header{
-    height: 40%;
+    height: 70%;
   }
-} */
+}
 
 .header span {
   position: absolute;
