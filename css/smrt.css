@@ -21,6 +21,9 @@
 }
 
 /* start header section */
+.container{
+  width: auto;
+}
 .titles{
   position: relative;
   z-index: 3;
@@ -52,11 +55,6 @@
   background-size: cover;
   background-position: 20%;
 
-}
-@media(min-width:757px){
-  .container .header{
-    height: 70%;
-  }
 }
 
 .header span {
